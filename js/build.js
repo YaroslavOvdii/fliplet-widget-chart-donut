@@ -120,16 +120,16 @@ function init(){
               allowPointSelect: true,
               cursor: 'pointer',
               dataLabels: {
-                enabled: data.show_data_values,
+                enabled: data.showDataValues,
                 format: [
-                  (!data.show_data_legend ? '<strong>{point.name}</strong>: ' : ''),
+                  (!data.showDataLegend ? '<strong>{point.name}</strong>: ' : ''),
                   '{point.percentage:.1f} %'
                 ].join(''),
                 style: {
                   color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
                 }
               },
-              showInLegend: data.show_data_legend
+              showInLegend: data.showDataLegend
             }
           },
           series: [{
