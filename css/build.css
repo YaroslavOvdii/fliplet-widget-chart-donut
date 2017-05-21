@@ -1,15 +1,9 @@
-.highcharts-credits {
-    display: none;
-}
-.highcharts-axis-line {
-    stroke: #6c9f1f;
-}
 .chart-donut-updatedAt,
 .chart-donut-total {
-    text-align: center;
-    color: #c2c2c2;
+  text-align: center;
+  color: #c2c2c2;
 }
 .chart-donut-updatedAt > .updatedAt,
 .chart-donut-total > .total {
-    color: #888888;
+  color: #888888;
 }
