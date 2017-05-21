@@ -1,5 +1,5 @@
 window.ui = window.ui || {}
-ui.flipletCharts = {};
+ui.flipletCharts = ui.flipletCharts || {};
 Fliplet().then(function(){
   $('[data-chart-donut-id]').each(function (i, el) {
     var chartId = $(this).data('chart-donut-id');
