@@ -91,9 +91,10 @@
             }, 0);
 
             return Promise.resolve();
-        }).catch(function(error){
-          return Promise.reject(error);
-        });
+          }).catch(function(error){
+            return Promise.reject(error);
+          });
+        })
       }
 
       function refreshChartInfo() {
@@ -194,14 +195,14 @@
                 Fliplet.Analytics.trackEvent({
                   category: 'chart',
                   action: 'data_point_interact',
-                  title: 'donut'
+                  label: 'donut'
                 });
               },
               legendItemClick: function () {
                 Fliplet.Analytics.trackEvent({
                   category: 'chart',
                   action: 'legend_filter',
-                  title: 'donut'
+                  label: 'donut'
                 });
               }
             }
