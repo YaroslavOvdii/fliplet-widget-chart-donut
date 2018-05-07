@@ -1,10 +1,17 @@
 .chart-donut-wrapper .chart-placeholder {
   position: relative;
 }
+
+.chart-donut-wrapper .chart-placeholder .chart-placeholder-text > * {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
 .chart-donut-wrapper .chart-placeholder .chart-container {
   opacity: 0.3;
   pointer-events: none;
 }
+
 .chart-donut-wrapper .chart-placeholder-text {
   position: absolute;
   top: 50%;
@@ -14,16 +21,25 @@
   -webkit-transform: translate3d(0, -50%, 0);
   transform: translate3d(0, -50%, 0);
 }
+
 .chart-donut-wrapper .chart-container {
-  min-width: 310px;
-  height: 400px;
+  min-height: 100px;
   margin: 0 auto;
+  height: 400px;
 }
+
+@media screen and (min-width: 640px) {
+  .chart-donut-wrapper .chart-container {
+    height: 500px;
+  }
+}
+
 .chart-donut-wrapper .chart-updatedAt,
 .chart-donut-wrapper .chart-total {
   text-align: center;
   color: #c2c2c2;
 }
+
 .chart-donut-wrapper .chart-updatedAt > .updatedAt,
 .chart-donut-wrapper .chart-total > .total {
   color: #888888;
